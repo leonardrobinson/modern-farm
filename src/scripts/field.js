@@ -5,8 +5,9 @@ import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 
+let allPlants = []
 
-export const addPlant = (seeds) = > {
+export const addPlant = (seeds) => {
     if (Array.isArray (seeds)){
         for (const seed of seeds) {
             allPlants.push(seed);
@@ -15,6 +16,6 @@ export const addPlant = (seeds) = > {
         allPlants.push(seeds)
     }
 };
-export const usePlants = () = > 
-    return (...allPlants);
+export const usePlants = () => 
+    return [...allPlants]
 };
