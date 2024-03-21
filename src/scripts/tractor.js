@@ -1,4 +1,4 @@
-import { createAsparagus } from "./seeds/asparagus.js"
+/* import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
 import { createSoybean } from "./seeds/soybean.js"
@@ -12,7 +12,8 @@ const potatoSeed = createPotato()
 const SoybeanSeed = createSoybean()
 const sunflowerSeed = createSunflower()
 const wheatSeed = createWheat()
-
+//Multidimensional array 
+//Nested for loop array[0][0]
 export const plantSeeds = (planting) => {
     for (const row of planting) (
         for const foodType of row) {
@@ -20,18 +21,19 @@ export const plantSeeds = (planting) => {
                 addPlant(asparagusSeed)
             }
             else if (foodType === "Corn"){
-                addPlant (cornSeed)
+                addPlant(cornSeed)
             }
-            else if (FoodType === "Potato"){
-                addPlant (potatoSeed)
+            else if (foodType === "Potato"){
+                addPlant(potatoSeed)
             }
-            else if (FoodType === "Soybean"){
-                addPlant (soybeanSeed)
+            else if (foodType === "Soybean"){
+                addPlant(soybeanSeed)
             }
-            else;se of (FoodType === "Sunflower"){
-                addPlant (sunflowerSeed)
+            else if (foodType === "Sunflower"){
+                addPlant(sunflowerSeed)
             }
-            else if (FoodType === "Wheat"){
-                addPlant (wheatSeed)
+            else if (food/Type === "Wheat"){
+                addPlant(wheatSeed)
+
             }
-    )
+    ) */

@@ -1,21 +1,23 @@
-import { createAsparagus } from "./seeds/asparagus.js"
-import { createCorn } from "./seeds/corn.js"
-import { createPotato } from "./seeds/potato.js"
-import { createSoybean } from "./seeds/soybean.js"
-import { createSunflower } from "./seeds/sunflower.js"
-import { createWheat } from "./seeds/wheat.js"
-
 let allPlants = []
 
-export const addPlant = (seeds) => {
-    if (Array.isArray (seeds)){
+const addPlant = (seeds) => {
+    //console.log(seeds.constructor) <------ shows what type of array
+    if (Array.isArray(seeds)) {
+        // for loop iterates over each element 
         for (const seed of seeds) {
+            //seed becomes corn one
+            console.log("adding seed: ", seed)
             allPlants.push(seed);
+        
         }
     } else {
         allPlants.push(seeds)
     }
 };
-export const usePlants = () => 
-    return [...allPlants]
+
+const usePlant = () => {
+    console.log("usePlant")
+    return allPlants
 };
+
+export {addPlant, usePlant}

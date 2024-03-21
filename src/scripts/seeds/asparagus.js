@@ -1,5 +1,5 @@
-export const createAsparagus = ()=> {
-    return{type: `Asparagus`, height: 24, output: 4,}
+export const createAsparagus = () => {
+    //console.log("hi from asparagus")test
+    return {type: 'Asparagus', height: 24, output: 4}
 }
-const asparagus = createAsparagus  
-console.log =(asparagus);
+
