@@ -6,6 +6,7 @@ import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 import { addPlant, usePlant } from "./field.js"
+import { plantSeeds } from "./tractor.js"
 //import { usePlants} from "./field.js"
 console.log("Welcome to the main module")
 const asparagus = createAsparagus()
@@ -23,7 +24,9 @@ addPlant(corn)
 addPlant(potato)
 addPlant(sunflower)
 const plants = usePlant()
-console.log(plants)
+plantSeeds(plantingPlan)
+console.log(usePlant)
+//console.log(plants)
 //console.log(wheat);
 //const myPlan = createPlan();
 //const yearlyPlan = createPlan()
