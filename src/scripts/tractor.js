@@ -14,6 +14,34 @@ const sunflowerSeed = createSunflower()
 const wheatSeed = createWheat()*/
 //Multidimensional array 
 //Nested for loop array[0][0]
+
+export const plantSeeds = (planting) => {
+    //let plantingPlan = []
+    for (const row of planting) {
+        for (const foodType of row) {}
+            if(foodType === "Asparagus"){
+                addPlant(asparagusSeed)
+            }
+            else if (foodType === "Corn"){
+                addPlant(cornSeed)
+            }
+            else if (foodType === "Potato"){
+                addPlant(potatoSeed)
+            }
+            else if (foodType === "Soybean"){
+                addPlant(soybeanSeed)
+            }
+            else if (foodType === "Sunflower"){
+                addPlant(sunflowerSeed)
+            }
+            else if (foodType === "Wheat"){
+                addPlant(wheatSeed)
+        }
+    }
+};
+
+
+/*let plantingSeeds = []
 export const plantSeeds = (planting) => {
     for (const row of planting) {
         for (const foodType of row) {}
@@ -36,4 +64,5 @@ export const plantSeeds = (planting) => {
                 addPlant(wheatSeed)
         }
     }
-}
+};
+export { plantSeeds, plantingPlan }*/

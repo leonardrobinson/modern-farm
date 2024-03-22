@@ -24,8 +24,10 @@ addPlant(corn)
 addPlant(potato)
 addPlant(sunflower)
 const plants = usePlant()
-plantSeeds(plantingPlan)
+//const plantSeeds = planting()
 console.log(usePlant)
+//plantSeeds(plantingPlan)
+
 //console.log(plants)
 //console.log(wheat);
 //const myPlan = createPlan();
